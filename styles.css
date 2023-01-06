@@ -1,0 +1,130 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #1C1C1C;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    gap: 10px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row2, .row3, .row4, .row5, .row6 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row2 button {
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+}
+
+#seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #zero, #decimal {
+    background-color: #505050;
+}
+
+#zero {
+    width: 210px;
+    text-align: start;
+    border-radius: 50px;
+    padding-left: 8%;
+}
+
+#divide, #multiply, #subtract, #add, #equals {
+    background-color: #FF9500;
+    color: white;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #1C1C1C;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+#display {
+    width: 430px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid #1C1C1C;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: end;
+    padding-right: 70px;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.small-display {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    padding-right: 78px;
+    color: #d4d4d283;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+/*make buttons smaller on mobile*/
+@media screen and (max-width: 500px) {
+    body {
+        display: flex;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        align-items: center;
+        height: 100vh;
+    }
+    main {
+        margin-top: 15%;
+        gap: 5px;
+    }
+    button {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        gap: 5px;
+    }
+    #display {
+        width: 340px;
+        height: 80px;
+        font-size: 40px;
+        padding-right: 3rem;
+    }
+    #zero {
+        width: 170px;
+    }
+}
+
+
