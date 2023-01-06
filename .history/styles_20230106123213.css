@@ -111,7 +111,6 @@ button:hover {
         gap: 5px;
     }
     button {
-        text-align: center;
         width: 80px;
         height: 80px;
         font-size: 40px;
