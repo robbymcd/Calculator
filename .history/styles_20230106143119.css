@@ -97,7 +97,7 @@ button:hover {
 }
 
 /*make buttons smaller on mobile*/
-@media only screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     body {
         display: flex;
         max-width: 100%;
